@@ -15,8 +15,6 @@ class AssignmentsAnswerRespository {
         }
     }
     async getAnswer(user_id, assignment_id) {
-        console.log(user_id, assignment_id);
-
         try {
             const answer = await models.AssignmentAnswer.findOne({
                 where: {
@@ -36,8 +34,6 @@ class AssignmentsAnswerRespository {
         }
     }
     async getAnswerByAssignment(assignment_id) {
-        console.log(assignment_id);
-
         try {
             const answer = await models.AssignmentAnswer.findAll({
                 where: {
@@ -74,8 +70,6 @@ class AssignmentsAnswerRespository {
             });
             return answer;
         } catch (err) {
-            console.log(err);
-
             throw new InternalServerError();
         }
     }
