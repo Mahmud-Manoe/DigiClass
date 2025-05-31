@@ -1,0 +1,17 @@
+GET  http://localhost:8000/roles
+
+//
+@baseURL = http://localhost:8000
+@origin = localhost:8000
+@accessToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InUxemgtbXYtNGRCOFpVcFZTZ29SNCIsImNsYWltcyI6eyJpZCI6InUxemgtbXYtNGRCOFpVcFZTZ29SNCIsImFnZW5jeV9pZCI6IkdBSHNmNjcydGdzdDdhLTI5IiwiZW1haWwiOiJqb3NodWEudGFtYXNvbGVuZ0BnbWFpbC5jb20ifSwiaWF0IjoxNjQ1NzIxOTUxLCJleHAiOjE2NDkzMjE5NTEsImlzcyI6ImFwaS52aW5jZXJlZGlnaXRhbC5jb20iLCJzdWIiOiJhY2Nlc3MifQ.gOBqhHK_PlomhS_eZJ2z6XTNl064ekkzy343ief4ctU
+
+### @name login
+
+//
+POST https://0d98-180-251-201-44.ngrok-free.app/login HTTP/1.1
+Content-Type: application/json
+Origin: {{origin}}
+{
+    "email": "mahmud@yahoo.com",
+    "password": "mahmud"
+}
