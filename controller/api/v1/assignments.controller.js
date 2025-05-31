@@ -1,4 +1,4 @@
-const AssignmentsService = require("../../../services/Assignments.service.js");
+const AssignmentsService = require("../../../services/assignments.service.js");
 const NotificationService = require("../../../services/notification.service.js");
 const { SuccessFetchResponse } = require("../../../utils/response.js");
 const { emitNotification } = require('../../../config/socket.js');
